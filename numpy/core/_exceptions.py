@@ -119,9 +119,11 @@ class _UFuncOutputCastingError(_UFuncCastingError):
 class TooHardError(RuntimeError):
     """max_work was exceeded.
 
-    This is raised whenever the maximum number of candidate solutions to consider specified by the ``max_work`` parameter exceeds.
-    Since checking whether two arrays share memory is NP-complete you have may considered 
-    setting up max_work to a finite number avoiding the function to become exponentially slow for some inputs.
+    This is raised whenever the maximum number of candidate solutions 
+    to consider specified by the ``max_work`` parameter exceeds.
+    Since checking whether two arrays share memory is NP-complete 
+    you have may considered setting up max_work to a finite number 
+    avoiding the function to become exponentially slow for some inputs.
 
     """
 
